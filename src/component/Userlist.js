@@ -5,10 +5,8 @@ import { Link } from "react-router-dom";
 function Userlist() {
   const [userlist, setuserlist] = useState([]);
   useEffect(() => {
-    return () => {
       getdata();
       console.log("test")
-    };
   }, []);
 
   async function getdata() {
