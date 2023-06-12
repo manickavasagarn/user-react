@@ -14,9 +14,7 @@ function Userlist() {
   async function getdata() {
     try {
       var data = await axios.get("https://user-api-2.onrender.com");
-      var users = await data.data;
-      console.log(users);
-      setuserlist(users);
+      setuserlist(data.data);
     } catch (error) {
       console.log(error);
     }
